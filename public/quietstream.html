@@ -1,0 +1,30 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>QuietHorse</title>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <link rel="shortcut icon" href="img/fav-icon.png" />    <!-- css -->
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+
+
+    <link rel="stylesheet" href="font-awesome.css">
+    <link rel="shortcut icon" href="img/logo.png" >
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <video controls name="media" onended="playQuiet()"  data-vc="y" id="stream">
+      <source id="audioSource" src="/playNext" type="audio/mpeg">
+    </video>
+    <button type="button" onclick="playQuiet()" name="button">Next</button>
+  </body>
+  <script src="stream.js">
+  </script>
+</html>
