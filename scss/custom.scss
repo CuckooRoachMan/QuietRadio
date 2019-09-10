@@ -1,0 +1,72 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+//body
+$body-bg: #33434d;
+$body-color: white;
+//main
+$main-bg-color: #352642;
+$aligntment: center;
+
+//buttons
+$btn-color: #0f9096 ;
+$btn-color-onlick: #42ecf5 ;
+$btn-color-border: #0f9096;
+$font-color:  rgba(255, 255, 255, 1);
+$icon-color: #0f9096;
+
+
+main{
+  background-color: $main-bg-color;
+  float: left;
+
+}
+
+
+i {
+  //width: 300px;
+  //height: 300px;
+//  border-color: none;
+  //background-color: none;
+  //color: $font-color;
+  //font-size: 148px;
+
+}
+
+
+
+i:hover{
+//  border-color: $btn-color-border;
+  //border-radius: 5px solid;
+
+}
+
+.material-icons.md-48 { font-size: 48px; }
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+
+button {
+  //display: block;
+  border-color: $btn-color;
+  background-color: $btn-color;
+  color: $font-color;
+  //display:block;
+  line-height:80px;
+  border-radius: 50%;
+  text-align:center;
+  text-decoration:none;
+  font-size:20px;
+  font-weight:bold;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid;
+}
+
+button:hover{
+
+  background-color: $btn-color-onlick;
+  color: $font-color;
+}
+
+//@import 'node_modules/material-design-icons/iconfont/material-icons';
+@import "../node_modules/bootstrap/scss/bootstrap";

@@ -15,9 +15,7 @@ function httpGetAsync(theUrl, callback)
 
 
 //$(document).ready(playQuiet);
-
-
-function playQuiet(){
+function nextQuiet(){
   //var newSong= new Howl();
   const Http = new XMLHttpRequest();
   const url='/playNext';
@@ -42,3 +40,13 @@ function playQuiet(){
     //audio.play();
 
 };
+
+function pauseQuiet(){
+  var audio = document.getElementById('stream');
+  audio.pause();
+}
+
+function playQuiet(){
+  var audio = document.getElementById('stream');
+  audio.play();
+}

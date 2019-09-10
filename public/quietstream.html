@@ -8,22 +8,54 @@
 
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
-    <link rel="shortcut icon" href="img/fav-icon.png" />    <!-- css -->
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/master.css">
     <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-
-    <link rel="stylesheet" href="font-awesome.css">
-    <link rel="shortcut icon" href="img/logo.png" >
-    <link href="css/main.css" rel="stylesheet">
   </head>
   <body>
-    <video controls name="media" onended="playQuiet()"  data-vc="y" id="stream">
-      <source id="audioSource" src="/playNext" type="audio/mpeg">
-    </video>
-    <button type="button" onclick="playQuiet()" name="button">Next</button>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+
+        </div>
+        <main class="col-10 text-center">
+          <h1>Quiet Player</h1>
+          <p>Quiet Player is a personal music player project I made to listen to my own music.</p>
+          <video controls name="media" onended="playQuiet()" autoplay="on"  data-vc="y" id="stream">
+            <source id="audioSource" src="/playNext" type="audio/mpeg">
+          </video>
+          <div>
+            <i class="material-icons md-light md-48" onclick="pauseQuiet()">
+              pause_circle_filled
+            </i>
+            <i class="material-icons md-light md-48" onclick="playQuiet()">
+              play_circle_filled
+            </i>
+            <i class="material-icons md-light md-48" onclick="nextQuiet()">
+              skip_next
+            </i>
+
+
+
+
+          </div>
+
+
+          <div class="">
+
+          </div>
+        </main>
+        <div class="col">
+
+        </div>
+
+      </div>
+
+    </div>
+
   </body>
   <script src="stream.js">
   </script>
